@@ -1,11 +1,11 @@
 n = int(input())
-int_list = list(input().split())
-x =0
-for i in range(n):
-    while int_list[i]%2 ==0:
-        for a in int_list:
-            a%2==0
-            x +=1
-            del int_list[0:n-1]
-            int_list.append(a/2)
-print(x)
+ls1 = list(map(int, input().split()))
+ls2 = []
+x = 0
+for c in ls1:
+    while c%2 ==0:
+        x += 1
+        c = c/2
+    ls2.append(x)
+    x = 0
+print (min(ls2))
