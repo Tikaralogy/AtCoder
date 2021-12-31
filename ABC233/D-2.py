@@ -3,5 +3,9 @@ ls = list(map(int,input().split()))
 sls = []
 for i in range(n):
     sls.append(sum(ls[i:]))
-for a in range(n):
-    for b in range()
+all = []
+for a in range(n-1):
+    for b in range(a+1,n):
+        all.append(sls[a]-sls[b])
+all += sls
+print(all.count(k))
