@@ -1,1 +1,4 @@
-print(len(bin(1)[2:]))
+for i in range(2**2):
+    print(i,'!')
+    for j in range(2):
+        print(i>>j)
